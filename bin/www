@@ -1,0 +1,119 @@
+#!/usr/bin/env node
+
+var app = require('../app');
+var debug = require('debug')('champleLocal:server');
+var http = require('http');
+
+var port = normalizePort(process.env.PORT || '3000');
+app.set('port', port);
+
+var server = http.createServer(app);
+
+server.listen(port);
+server.on('error', onError);
+server.on('listening', onListening);
+
+/*　本番
+var app = require('../app');
+var debug = require('debug')('chample:server');
+var http = require('http');
+var https = require('https');
+var fs = require('fs');
+
+var port;
+var port80 = normalizePort('80');
+var port443 = normalizePort('443');
+app.set('port80', port80);
+app.set('port443', port443);
+
+var options = {
+        key: fs.readFileSync(__dirname + '/keys/privkey.pem'),
+        cert: fs.readFileSync(__dirname + '/keys/cert.pem'),
+        ca: fs.readFileSync(__dirname + '/keys/chain.pem')
+};
+
+var server80 = http.createServer(app);
+var server443 = https.createServer(options, app);
+
+server80.listen(port80);
+server80.on('error', onError);
+server80.on('listening', onListening80);
+
+server443.listen(port443);
+server443.on('error', onError);
+server443.on('listening', onListening443);
+*/
+
+function normalizePort(val) {
+  var port = parseInt(val, 10);
+
+  if (isNaN(port)) {
+    // named pipe
+    return val;
+  }
+
+  if (port >= 0) {
+    // port number
+    return port;
+  }
+
+  return false;
+}
+
+/**
+ * Event listener for HTTP server "error" event.
+ */
+
+function onError(error) {
+  if (error.syscall !== 'listen') {
+    throw error;
+  }
+
+  var bind = typeof port === 'string'
+    ? 'Pipe ' + port
+    : 'Port ' + port;
+
+  // handle specific listen errors with friendly messages
+  switch (error.code) {
+    case 'EACCES':
+      console.error(bind + ' requires elevated privileges');
+      process.exit(1);
+      break;
+    case 'EADDRINUSE':
+      console.error(bind + ' is already in use');
+      process.exit(1);
+      break;
+    default:
+      throw error;
+  }
+}
+
+/**
+ * Event listener for HTTP server "listening" event.
+ */
+
+function onListening() {
+  var addr = server.address();
+  var bind = typeof addr === 'string'
+    ? 'pipe ' + addr
+    : 'port ' + addr.port;
+  debug('Listening on ' + bind);
+}
+
+function onListening80() {
+  var server = server80;
+  var addr = server.address();
+  var bind = typeof addr === 'string'
+    ? 'pipe ' + addr
+    : 'port ' + addr.port;
+  debug('Listening on ' + bind);
+}
+
+function onListening443() {
+  var server = server443;
+  var addr = server.address();
+  var bind = typeof addr === 'string'
+    ? 'pipe ' + addr
+    : 'port ' + addr.port;
+  debug('Listening on ' + bind);
+}

@@ -1,0 +1,101 @@
+/* 画面全体を上下左右の中央へ */
+
+#bodyFrame {
+    width: 800px;
+    margin-top: -255px;
+}
+
+/* ３人とプレーヤは左側に、あとの３人は右側に */
+
+#leftpart {
+    float: left;
+}
+
+/* それぞれの人の情報とビデオ */
+
+.onePerson {
+    height: 169px;
+}
+.videoNicknameFrame {
+    width: 600px;
+    height: 169px;
+}
+.videoNicknameFrame:nth-child(2) {
+    float: left;
+    width: 200px;
+    height: 508px;
+}
+.videos {
+    display: inline-block;
+    width: 199px;
+    height: 150px;
+}
+.nicknames {
+    width: 199px;
+    height: 19px;
+}
+.nicknames img {
+    margin-top: 0px;
+    height: 17px;
+    width: 27px;
+}
+.nicknames span {
+    font-size: 17px;
+    height: 19px;
+    line-height: 19px;
+    width: 165px;
+    margin-left: 3px;
+}
+#nickname5 {
+    margin-bottom: 1px;
+}
+
+/* プレーヤー本体 */
+
+#player {
+    width: 599px;
+    height: 338px;
+}
+#playerFrame {
+    width: 599px;
+    height: 338px;
+    margin: 1px 1px 1px 0;
+}
+
+/* トピック */
+
+#topicsFrame {
+    clear: both;
+    padding: 20px 0 0 0;
+}
+.singButtons:hover {
+    color: white;
+    font-weight: 400;
+    background: #08c;
+}
+#topics p {
+    margin: 5px 15px;
+    font-size: 16px;
+}
+#topicsTitle {
+    font-size: 22px;
+    margin: 10px 0 10px 30px;
+}
+
+/* 始まる前のメッセージ */
+
+#singStat {
+    width: 599px;
+}
+
+/* 独自の再生ボタンとボリュームコントロール */
+
+#playerControl {
+    top: 303px;
+}
+
+/* 退室ボタン */
+
+.leaveButton:hover {
+  opacity: 1;
+}

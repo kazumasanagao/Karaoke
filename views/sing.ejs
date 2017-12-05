@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang=<%= language %>>
+<head> 
+    <meta charset="utf-8" />
+    <title><%= title %></title>
+    <meta name="robots" content="noindex"><!-- インデックス不要 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+    <link rel="stylesheet" href="./stylesheets/sing.css" />
+    <link rel="stylesheet" href="./stylesheets/sing_pc.css" media="screen and (min-width:800px)"/>
+    <link rel="stylesheet" href="./jqvmap/jqvmap.css" />
+</head>
+
+<body>
+<div id="bodyFrame">
+<div id="leftpart">
+
+<div class="videoNicknameFrame">
+    <div class="onePerson">
+        <div id="nickname0" class="nicknames"><img class="flagImg"><span></span></div>
+        <video id="video0" class="videos" autoplay></video>
+    </div>
+    <div class="onePerson">
+        <div id="nickname1" class="nicknames"><img class="flagImg"><span></span></div>
+        <video id="video1" class="videos" autoplay></video>
+    </div>
+    <div class="onePerson">
+        <div id="nickname2" class="nicknames"><img class="flagImg"><span></span></div>
+        <video id="video2" class="videos" autoplay></video>
+    </div>
+</div>
+
+<div id="playerFrame">
+
+    <iframe id="player" class="player" width="320" height="180" src="https://www.youtube.com/embed/<%= url %>?loop=1&playlist=<%= url %>&controls=0&rel=0&showinfo=0&fs=0&autohide=1&enablejsapi=1" frameborder="0"></iframe>
+    
+    <div id="popupMenu">
+        <div id="playerControl">
+            <img class="speaker" src="./images/speaker.png" width="32" height="32">
+            <input type="range" id="volume" value="50" min="0" max="100" oninput="setVolume(this.value)">
+        </div>
+    </div>
+
+    <div id="startAtMes">
+        <p id="singStat"><span id="singStat1"><%= startSinging %><span class="emInfo"></span><%= later %><br/></span><span id="singStat2"><%= enjoyTalking %></span></p>
+    </div>
+
+    <div id="countdownBiggerTen"></div>
+
+
+    <div id="closeButton"><img src="./images/close.png" width="30" height="30" alt="CloseButton"></div>
+
+    <div id="map" class="subscreen"><div id="world"></div></div>
+
+    <div id="lyric" class="subscreen">
+        <p id="lyricMes"><%= lyricMes %></p>
+        <p><a class="clickable" href="https://www.musixmatch.com/" target="_blank">musixmatch</a><p>
+    </div>
+
+    <div id="topics" class="subscreen">
+        <div id="topicsTitle"><%= topicsExample %></div>
+        <p>・Where are you from?</p>
+        <p>・How is the weather now?</p>
+        <p>・What are your hobbies?</p>
+        <p>・Who is your favorite singer?</p>
+        <p>・What do you do in your free time?</p>
+        <p>・What did you do on last weekend?</p>
+        <p>・Where's the best place you've visited?</p>
+        <p>・What is your favorite food?</p>
+    </div>
+
+</div>
+</div> <!-- leftpart -->
+
+<div class="videoNicknameFrame">
+    <div class="onePerson">
+
+        <video id="video3" class="videos" autoplay></video>
+        <div id="nickname3" class="nicknames"><img class="flagImg"><span></span></div>
+    </div>
+    <div class="onePerson">
+
+        <video id="video4" class="videos" autoplay></video>
+        <div id="nickname4" class="nicknames"><img class="flagImg"><span></span></div>
+    </div>
+    <div class="onePerson">
+
+        <video id="video5" class="videos" autoplay></video>
+        <div id="nickname5" class="nicknames"><img class="flagImg"><span></span></div>
+    </div>
+</div>
+
+<div id="topicsFrame">
+    <span id="mapButton" class="singButtons"><%= map %></span>
+    <span id="lyricButton" class="singButtons"><%= lyric %></span>
+    <span id="topicsButton" class="singButtons"><%= topics %></span>
+</div>
+
+<div class="leaveButton" style="display:none;clear:both;position:relative;top:15px;"><%= leaveRoom %></div>
+
+<div id="toast">
+    <span id="toastCountry" class="toastMessage"></span>
+    <span id="toastMap" class="toastMessage"></span>
+</div>
+</div><!-- bodyFrame -->
+
+<div id="clickToPlay"><div id="loadingVideo"><img src="./images/reloadBig.png" width="64" height="64" alt="loading"></div><p><%= clickToPlay %></p></div>
+
+<div id="countdownFrame">
+    <div id="countdown"></div>
+</div>
+
+<div id="enterFail">
+    <div id="enterFailMes">
+        <span id="empty"><%= failEmpty %></span>
+        <span id="full"><%= failFull %></span>
+        <span id="timeout"><%= failTimeout %></span>
+        <span id="others"><%= failOther %></span>
+    </div>
+    <div class="leaveButton"><%= leaveRoom %></div>
+</div>
+
+<div id="browserUnable" style="display:none;"><%= browserUnable %></div>
+<div id="needCamera" style="display:none;"><%= needCamera %></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+<script src="../jqvmap/jquery.vmap.js"></script>
+<script src="../jqvmap/maps/jquery.vmap.world.js"></script>
+
+<script src="./javascripts/socket.io.js"></script>
+<script src="./javascripts/conf.js"></script>
+<script src="./javascripts/common.js"></script>
+<script src="./javascripts/talk.js"></script>
+<script src="./javascripts/adapter.js"></script>
+<script src="./javascripts/sing.js"></script>
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-74825022-1', 'auto');ga('send', 'pageview');</script>
+</body>
+
+</html>

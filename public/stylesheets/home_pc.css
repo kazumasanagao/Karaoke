@@ -1,0 +1,85 @@
+/* 画面上部のメニューバー */
+
+#topMenuFrame {
+    position: relative;
+    width: 800px;
+    margin: 0 auto;
+}
+
+/* 画面トップのイントロ部分 */
+
+#topFrame {
+    width: 100%;
+    margin: 0 auto;
+}
+#mainImg {
+    width: 480px;
+    height: 270px;
+}
+
+/* それぞれの曲 */
+
+.oneSong {
+    width: 50%;
+    float: left;
+}
+.oneSong:nth-child(2n+1) .songFrame {
+    width: 320px;
+    margin: 0 70px 0 auto;
+}
+.oneSong:nth-child(2n+2) .songFrame {
+    width: 320px;
+    margin: 0 auto 0 70px;
+}
+.oneSong:nth-child(2n+1) {
+    background: #ffffff;
+}
+.oneSong:nth-child(4n+1) {
+    background: #f2f2f2;
+}
+.oneSong:nth-child(4n+2) {
+    background: #f2f2f2;
+}
+.joinButton:hover {
+    opacity: 1;
+}
+.ytImgFrame:hover {
+    opacity: 0.8;
+}
+
+/* ユーザー情報の設定 */
+
+#addUserInfoOK:hover {
+    opacity: 1;
+}
+
+/* 曲の追加 */
+
+#addSongOK:hover {
+    opacity: 1;
+}
+
+/* 曲が奇数になることもあるので */
+
+#clearbothsongs {
+    clear: both;
+}
+#songGrayPad {
+    width: 50%;
+    float: right;
+    display: none;
+    background: #f2f2f2;
+}
+
+/* ポップアップパネルの外枠 */
+
+#addSong {
+    top:80px;
+    width:360px;
+    margin-left: -180px; 
+}
+#addUserInfo {
+    top:80px; 
+    width:360px;
+    margin-left: -180px;
+}

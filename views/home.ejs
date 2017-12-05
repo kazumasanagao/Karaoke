@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang=<%= language %>>
+<head> 
+    <meta charset="utf-8" />
+    <title><%= title %></title>
+    <meta name="description" <%- description %> />
+    <meta name="keywords" content=<%= keywords %> />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+    <link rel="stylesheet" href="./stylesheets/home.css" />
+    <link rel="stylesheet" href="./stylesheets/home_pc.css" media="screen and (min-width:800px)"/>
+</head>
+
+<body>
+    <div id="topMenu">
+        <div id="topMenuFrame">
+            <h1>Chample <span><%= freeonline %></span></h1>
+        </div>
+    </div>
+    
+    <div id="topFrame">
+        <h2><%= h1 %></h2>
+        <p class="disc"><%= h1disc %></p>
+
+        <div id="mainImg"></div>
+
+        <h2><%= h2 %></h2>
+        <p class="disc"><span class="clickable addSongFunc"><%= h2disc %></span></p>
+
+        <!--<p id="howtoplay" class="clickable"><%= howtoplay %></p>-->
+        <div id="introPics">
+            <p><img src="./images/intro/intro1_<%= language %>.png" width="320" height="320" alt="intro1"></p>
+            <p><img src="./images/intro/intro2_<%= language %>.png" width="320" height="320" alt="intro2"></p>
+            <p><img src="./images/intro/intro3_<%= language %>.png" width="320" height="320" alt="intro3"></p>
+        </div>
+    </div>
+　　
+    <div>
+    <div id="song0" class="oneSong">
+        <div class="songFrame">
+        <div class="songTitle"></div>
+        <div class="ytImgFrame"><div class="ytButton"><img width="42" height="30" src="./images/ytButton.png" alt=""></div></div>
+        <div class="joinButton"><%= joinButton %></div>
+        <div class="roomInfo">
+            <span class="roomInfoPerson"><span class="clickable"><span class="emInfo"></span><%= persons %></span><%= arein %></span>
+            <span class="roomInfoTime"><%= startsinging %><span class="emInfo"></span><%= later %></span>
+        </div>
+        <div class="mask maskFull"><div class="maskMessage"><%= maskFull %></div></div>
+        <div class="mask maskEmpty"><div class="maskMessage"><%= maskEmpty %></div></div>
+        <div class="mask maskTimeout"><div class="maskMessage"><%= maskTimeout %></div></div>
+        </div>
+    </div>
+    <div id="song1" class="oneSong"><div class="songFrame"><div class="songTitle"></div><div class="ytImgFrame"><div class="ytButton"><img width="42" height="30" src="./images/ytButton.png" alt=""></div></div><div class="joinButton"><%= joinButton %></div><div class="roomInfo"><span class="roomInfoPerson"><span class="clickable"><span class="emInfo"></span><%= persons %></span><%= arein %></span><span class="roomInfoTime"><%= startsinging %><span class="emInfo"></span><%= later %></span></div><div class="mask maskFull"><div class="maskMessage"><%= maskFull %></div></div><div class="mask maskEmpty"><div class="maskMessage"><%= maskEmpty %></div></div><div class="mask maskTimeout"><div class="maskMessage"><%= maskTimeout %></div></div></div></div>
+    <div id="song2" class="oneSong"><div class="songFrame"><div class="songTitle"></div><div class="ytImgFrame"><div class="ytButton"><img width="42" height="30" src="./images/ytButton.png" alt=""></div></div><div class="joinButton"><%= joinButton %></div><div class="roomInfo"><span class="roomInfoPerson"><span class="clickable"><span class="emInfo"></span><%= persons %></span><%= arein %></span><span class="roomInfoTime"><%= startsinging %><span class="emInfo"></span><%= later %></span></div><div class="mask maskFull"><div class="maskMessage"><%= maskFull %></div></div><div class="mask maskEmpty"><div class="maskMessage"><%= maskEmpty %></div></div><div class="mask maskTimeout"><div class="maskMessage"><%= maskTimeout %></div></div></div></div>
+    <div id="song3" class="oneSong"><div class="songFrame"><div class="songTitle"></div><div class="ytImgFrame"><div class="ytButton"><img width="42" height="30" src="./images/ytButton.png" alt=""></div></div><div class="joinButton"><%= joinButton %></div><div class="roomInfo"><span class="roomInfoPerson"><span class="clickable"><span class="emInfo"></span><%= persons %></span><%= arein %></span><span class="roomInfoTime"><%= startsinging %><span class="emInfo"></span><%= later %></span></div><div class="mask maskFull"><div class="maskMessage"><%= maskFull %></div></div><div class="mask maskEmpty"><div class="maskMessage"><%= maskEmpty %></div></div><div class="mask maskTimeout"><div class="maskMessage"><%= maskTimeout %></div></div></div></div>
+    <div id="song4" class="oneSong"><div class="songFrame"><div class="songTitle"></div><div class="ytImgFrame"><div class="ytButton"><img width="42" height="30" src="./images/ytButton.png" alt=""></div></div><div class="joinButton"><%= joinButton %></div><div class="roomInfo"><span class="roomInfoPerson"><span class="clickable"><span class="emInfo"></span><%= persons %></span><%= arein %></span><span class="roomInfoTime"><%= startsinging %><span class="emInfo"></span><%= later %></span></div><div class="mask maskFull"><div class="maskMessage"><%= maskFull %></div></div><div class="mask maskEmpty"><div class="maskMessage"><%= maskEmpty %></div></div><div class="mask maskTimeout"><div class="maskMessage"><%= maskTimeout %></div></div></div></div>
+    <div id="song5" class="oneSong"><div class="songFrame"><div class="songTitle"></div><div class="ytImgFrame"><div class="ytButton"><img width="42" height="30" src="./images/ytButton.png" alt=""></div></div><div class="joinButton"><%= joinButton %></div><div class="roomInfo"><span class="roomInfoPerson"><span class="clickable"><span class="emInfo"></span><%= persons %></span><%= arein %></span><span class="roomInfoTime"><%= startsinging %><span class="emInfo"></span><%= later %></span></div><div class="mask maskFull"><div class="maskMessage"><%= maskFull %></div></div><div class="mask maskEmpty"><div class="maskMessage"><%= maskEmpty %></div></div><div class="mask maskTimeout"><div class="maskMessage"><%= maskTimeout %></div></div></div></div>
+    <div id="song6" class="oneSong"><div class="songFrame"><div class="songTitle"></div><div class="ytImgFrame"><div class="ytButton"><img width="42" height="30" src="./images/ytButton.png" alt=""></div></div><div class="joinButton"><%= joinButton %></div><div class="roomInfo"><span class="roomInfoPerson"><span class="clickable"><span class="emInfo"></span><%= persons %></span><%= arein %></span><span class="roomInfoTime"><%= startsinging %><span class="emInfo"></span><%= later %></span></div><div class="mask maskFull"><div class="maskMessage"><%= maskFull %></div></div><div class="mask maskEmpty"><div class="maskMessage"><%= maskEmpty %></div></div><div class="mask maskTimeout"><div class="maskMessage"><%= maskTimeout %></div></div></div></div>
+    <div id="song7" class="oneSong"><div class="songFrame"><div class="songTitle"></div><div class="ytImgFrame"><div class="ytButton"><img width="42" height="30" src="./images/ytButton.png" alt=""></div></div><div class="joinButton"><%= joinButton %></div><div class="roomInfo"><span class="roomInfoPerson"><span class="clickable"><span class="emInfo"></span><%= persons %></span><%= arein %></span><span class="roomInfoTime"><%= startsinging %><span class="emInfo"></span><%= later %></span></div><div class="mask maskFull"><div class="maskMessage"><%= maskFull %></div></div><div class="mask maskEmpty"><div class="maskMessage"><%= maskEmpty %></div></div><div class="mask maskTimeout"><div class="maskMessage"><%= maskTimeout %></div></div></div></div>
+    <div id="song8" class="oneSong"><div class="songFrame"><div class="songTitle"></div><div class="ytImgFrame"><div class="ytButton"><img width="42" height="30" src="./images/ytButton.png" alt=""></div></div><div class="joinButton"><%= joinButton %></div><div class="roomInfo"><span class="roomInfoPerson"><span class="clickable"><span class="emInfo"></span><%= persons %></span><%= arein %></span><span class="roomInfoTime"><%= startsinging %><span class="emInfo"></span><%= later %></span></div><div class="mask maskFull"><div class="maskMessage"><%= maskFull %></div></div><div class="mask maskEmpty"><div class="maskMessage"><%= maskEmpty %></div></div><div class="mask maskTimeout"><div class="maskMessage"><%= maskTimeout %></div></div></div></div>
+    <div id="song9" class="oneSong"><div class="songFrame"><div class="songTitle"></div><div class="ytImgFrame"><div class="ytButton"><img width="42" height="30" src="./images/ytButton.png" alt=""></div></div><div class="joinButton"><%= joinButton %></div><div class="roomInfo"><span class="roomInfoPerson"><span class="clickable"><span class="emInfo"></span><%= persons %></span><%= arein %></span><span class="roomInfoTime"><%= startsinging %><span class="emInfo"></span><%= later %></span></div><div class="mask maskFull"><div class="maskMessage"><%= maskFull %></div></div><div class="mask maskEmpty"><div class="maskMessage"><%= maskEmpty %></div></div><div class="mask maskTimeout"><div class="maskMessage"><%= maskTimeout %></div></div></div></div>
+    <div id="song10" class="oneSong"><div class="songFrame"><div class="songTitle"></div><div class="ytImgFrame"><div class="ytButton"><img width="42" height="30" src="./images/ytButton.png" alt=""></div></div><div class="joinButton"><%= joinButton %></div><div class="roomInfo"><span class="roomInfoPerson"><span class="clickable"><span class="emInfo"></span><%= persons %></span><%= arein %></span><span class="roomInfoTime"><%= startsinging %><span class="emInfo"></span><%= later %></span></div><div class="mask maskFull"><div class="maskMessage"><%= maskFull %></div></div><div class="mask maskEmpty"><div class="maskMessage"><%= maskEmpty %></div></div><div class="mask maskTimeout"><div class="maskMessage"><%= maskTimeout %></div></div></div></div>
+    <div id="song11" class="oneSong"><div class="songFrame"><div class="songTitle"></div><div class="ytImgFrame"><div class="ytButton"><img width="42" height="30" src="./images/ytButton.png" alt=""></div></div><div class="joinButton"><%= joinButton %></div><div class="roomInfo"><span class="roomInfoPerson"><span class="clickable"><span class="emInfo"></span><%= persons %></span><%= arein %></span><span class="roomInfoTime"><%= startsinging %><span class="emInfo"></span><%= later %></span></div><div class="mask maskFull"><div class="maskMessage"><%= maskFull %></div></div><div class="mask maskEmpty"><div class="maskMessage"><%= maskEmpty %></div></div><div class="mask maskTimeout"><div class="maskMessage"><%= maskTimeout %></div></div></div></div>
+    <div id="song12" class="oneSong"><div class="songFrame"><div class="songTitle"></div><div class="ytImgFrame"><div class="ytButton"><img width="42" height="30" src="./images/ytButton.png" alt=""></div></div><div class="joinButton"><%= joinButton %></div><div class="roomInfo"><span class="roomInfoPerson"><span class="clickable"><span class="emInfo"></span><%= persons %></span><%= arein %></span><span class="roomInfoTime"><%= startsinging %><span class="emInfo"></span><%= later %></span></div><div class="mask maskFull"><div class="maskMessage"><%= maskFull %></div></div><div class="mask maskEmpty"><div class="maskMessage"><%= maskEmpty %></div></div><div class="mask maskTimeout"><div class="maskMessage"><%= maskTimeout %></div></div></div></div>
+    <div id="song13" class="oneSong"><div class="songFrame"><div class="songTitle"></div><div class="ytImgFrame"><div class="ytButton"><img width="42" height="30" src="./images/ytButton.png" alt=""></div></div><div class="joinButton"><%= joinButton %></div><div class="roomInfo"><span class="roomInfoPerson"><span class="clickable"><span class="emInfo"></span><%= persons %></span><%= arein %></span><span class="roomInfoTime"><%= startsinging %><span class="emInfo"></span><%= later %></span></div><div class="mask maskFull"><div class="maskMessage"><%= maskFull %></div></div><div class="mask maskEmpty"><div class="maskMessage"><%= maskEmpty %></div></div><div class="mask maskTimeout"><div class="maskMessage"><%= maskTimeout %></div></div></div></div>
+    <div id="song14" class="oneSong"><div class="songFrame"><div class="songTitle"></div><div class="ytImgFrame"><div class="ytButton"><img width="42" height="30" src="./images/ytButton.png" alt=""></div></div><div class="joinButton"><%= joinButton %></div><div class="roomInfo"><span class="roomInfoPerson"><span class="clickable"><span class="emInfo"></span><%= persons %></span><%= arein %></span><span class="roomInfoTime"><%= startsinging %><span class="emInfo"></span><%= later %></span></div><div class="mask maskFull"><div class="maskMessage"><%= maskFull %></div></div><div class="mask maskEmpty"><div class="maskMessage"><%= maskEmpty %></div></div><div class="mask maskTimeout"><div class="maskMessage"><%= maskTimeout %></div></div></div></div>
+    <div id="song15" class="oneSong"><div class="songFrame"><div class="songTitle"></div><div class="ytImgFrame"><div class="ytButton"><img width="42" height="30" src="./images/ytButton.png" alt=""></div></div><div class="joinButton"><%= joinButton %></div><div class="roomInfo"><span class="roomInfoPerson"><span class="clickable"><span class="emInfo"></span><%= persons %></span><%= arein %></span><span class="roomInfoTime"><%= startsinging %><span class="emInfo"></span><%= later %></span></div><div class="mask maskFull"><div class="maskMessage"><%= maskFull %></div></div><div class="mask maskEmpty"><div class="maskMessage"><%= maskEmpty %></div></div><div class="mask maskTimeout"><div class="maskMessage"><%= maskTimeout %></div></div></div></div>
+    <div id="song16" class="oneSong"><div class="songFrame"><div class="songTitle"></div><div class="ytImgFrame"><div class="ytButton"><img width="42" height="30" src="./images/ytButton.png" alt=""></div></div><div class="joinButton"><%= joinButton %></div><div class="roomInfo"><span class="roomInfoPerson"><span class="clickable"><span class="emInfo"></span><%= persons %></span><%= arein %></span><span class="roomInfoTime"><%= startsinging %><span class="emInfo"></span><%= later %></span></div><div class="mask maskFull"><div class="maskMessage"><%= maskFull %></div></div><div class="mask maskEmpty"><div class="maskMessage"><%= maskEmpty %></div></div><div class="mask maskTimeout"><div class="maskMessage"><%= maskTimeout %></div></div></div></div>
+    <div id="song17" class="oneSong"><div class="songFrame"><div class="songTitle"></div><div class="ytImgFrame"><div class="ytButton"><img width="42" height="30" src="./images/ytButton.png" alt=""></div></div><div class="joinButton"><%= joinButton %></div><div class="roomInfo"><span class="roomInfoPerson"><span class="clickable"><span class="emInfo"></span><%= persons %></span><%= arein %></span><span class="roomInfoTime"><%= startsinging %><span class="emInfo"></span><%= later %></span></div><div class="mask maskFull"><div class="maskMessage"><%= maskFull %></div></div><div class="mask maskEmpty"><div class="maskMessage"><%= maskEmpty %></div></div><div class="mask maskTimeout"><div class="maskMessage"><%= maskTimeout %></div></div></div></div>
+    <div id="song18" class="oneSong"><div class="songFrame"><div class="songTitle"></div><div class="ytImgFrame"><div class="ytButton"><img width="42" height="30" src="./images/ytButton.png" alt=""></div></div><div class="joinButton"><%= joinButton %></div><div class="roomInfo"><span class="roomInfoPerson"><span class="clickable"><span class="emInfo"></span><%= persons %></span><%= arein %></span><span class="roomInfoTime"><%= startsinging %><span class="emInfo"></span><%= later %></span></div><div class="mask maskFull"><div class="maskMessage"><%= maskFull %></div></div><div class="mask maskEmpty"><div class="maskMessage"><%= maskEmpty %></div></div><div class="mask maskTimeout"><div class="maskMessage"><%= maskTimeout %></div></div></div></div>
+    <div id="song19" class="oneSong"><div class="songFrame"><div class="songTitle"></div><div class="ytImgFrame"><div class="ytButton"><img width="42" height="30" src="./images/ytButton.png" alt=""></div></div><div class="joinButton"><%= joinButton %></div><div class="roomInfo"><span class="roomInfoPerson"><span class="clickable"><span class="emInfo"></span><%= persons %></span><%= arein %></span><span class="roomInfoTime"><%= startsinging %><span class="emInfo"></span><%= later %></span></div><div class="mask maskFull"><div class="maskMessage"><%= maskFull %></div></div><div class="mask maskEmpty"><div class="maskMessage"><%= maskEmpty %></div></div><div class="mask maskTimeout"><div class="maskMessage"><%= maskTimeout %></div></div></div></div>
+    <div id="song20" class="oneSong"><div class="songFrame"><div class="songTitle"></div><div class="ytImgFrame"><div class="ytButton"><img width="42" height="30" src="./images/ytButton.png" alt=""></div></div><div class="joinButton"><%= joinButton %></div><div class="roomInfo"><span class="roomInfoPerson"><span class="clickable"><span class="emInfo"></span><%= persons %></span><%= arein %></span><span class="roomInfoTime"><%= startsinging %><span class="emInfo"></span><%= later %></span></div><div class="mask maskFull"><div class="maskMessage"><%= maskFull %></div></div><div class="mask maskEmpty"><div class="maskMessage"><%= maskEmpty %></div></div><div class="mask maskTimeout"><div class="maskMessage"><%= maskTimeout %></div></div></div></div>
+    <div id="song21" class="oneSong"><div class="songFrame"><div class="songTitle"></div><div class="ytImgFrame"><div class="ytButton"><img width="42" height="30" src="./images/ytButton.png" alt=""></div></div><div class="joinButton"><%= joinButton %></div><div class="roomInfo"><span class="roomInfoPerson"><span class="clickable"><span class="emInfo"></span><%= persons %></span><%= arein %></span><span class="roomInfoTime"><%= startsinging %><span class="emInfo"></span><%= later %></span></div><div class="mask maskFull"><div class="maskMessage"><%= maskFull %></div></div><div class="mask maskEmpty"><div class="maskMessage"><%= maskEmpty %></div></div><div class="mask maskTimeout"><div class="maskMessage"><%= maskTimeout %></div></div></div></div>
+    <div id="song22" class="oneSong"><div class="songFrame"><div class="songTitle"></div><div class="ytImgFrame"><div class="ytButton"><img width="42" height="30" src="./images/ytButton.png" alt=""></div></div><div class="joinButton"><%= joinButton %></div><div class="roomInfo"><span class="roomInfoPerson"><span class="clickable"><span class="emInfo"></span><%= persons %></span><%= arein %></span><span class="roomInfoTime"><%= startsinging %><span class="emInfo"></span><%= later %></span></div><div class="mask maskFull"><div class="maskMessage"><%= maskFull %></div></div><div class="mask maskEmpty"><div class="maskMessage"><%= maskEmpty %></div></div><div class="mask maskTimeout"><div class="maskMessage"><%= maskTimeout %></div></div></div></div>
+    <div id="song23" class="oneSong"><div class="songFrame"><div class="songTitle"></div><div class="ytImgFrame"><div class="ytButton"><img width="42" height="30" src="./images/ytButton.png" alt=""></div></div><div class="joinButton"><%= joinButton %></div><div class="roomInfo"><span class="roomInfoPerson"><span class="clickable"><span class="emInfo"></span><%= persons %></span><%= arein %></span><span class="roomInfoTime"><%= startsinging %><span class="emInfo"></span><%= later %></span></div><div class="mask maskFull"><div class="maskMessage"><%= maskFull %></div></div><div class="mask maskEmpty"><div class="maskMessage"><%= maskEmpty %></div></div><div class="mask maskTimeout"><div class="maskMessage"><%= maskTimeout %></div></div></div></div>
+    <div id="song24" class="oneSong"><div class="songFrame"><div class="songTitle"></div><div class="ytImgFrame"><div class="ytButton"><img width="42" height="30" src="./images/ytButton.png" alt=""></div></div><div class="joinButton"><%= joinButton %></div><div class="roomInfo"><span class="roomInfoPerson"><span class="clickable"><span class="emInfo"></span><%= persons %></span><%= arein %></span><span class="roomInfoTime"><%= startsinging %><span class="emInfo"></span><%= later %></span></div><div class="mask maskFull"><div class="maskMessage"><%= maskFull %></div></div><div class="mask maskEmpty"><div class="maskMessage"><%= maskEmpty %></div></div><div class="mask maskTimeout"><div class="maskMessage"><%= maskTimeout %></div></div></div></div>
+    <div id="song25" class="oneSong"><div class="songFrame"><div class="songTitle"></div><div class="ytImgFrame"><div class="ytButton"><img width="42" height="30" src="./images/ytButton.png" alt=""></div></div><div class="joinButton"><%= joinButton %></div><div class="roomInfo"><span class="roomInfoPerson"><span class="clickable"><span class="emInfo"></span><%= persons %></span><%= arein %></span><span class="roomInfoTime"><%= startsinging %><span class="emInfo"></span><%= later %></span></div><div class="mask maskFull"><div class="maskMessage"><%= maskFull %></div></div><div class="mask maskEmpty"><div class="maskMessage"><%= maskEmpty %></div></div><div class="mask maskTimeout"><div class="maskMessage"><%= maskTimeout %></div></div></div></div>
+    <div id="song26" class="oneSong"><div class="songFrame"><div class="songTitle"></div><div class="ytImgFrame"><div class="ytButton"><img width="42" height="30" src="./images/ytButton.png" alt=""></div></div><div class="joinButton"><%= joinButton %></div><div class="roomInfo"><span class="roomInfoPerson"><span class="clickable"><span class="emInfo"></span><%= persons %></span><%= arein %></span><span class="roomInfoTime"><%= startsinging %><span class="emInfo"></span><%= later %></span></div><div class="mask maskFull"><div class="maskMessage"><%= maskFull %></div></div><div class="mask maskEmpty"><div class="maskMessage"><%= maskEmpty %></div></div><div class="mask maskTimeout"><div class="maskMessage"><%= maskTimeout %></div></div></div></div>
+    <div id="song27" class="oneSong"><div class="songFrame"><div class="songTitle"></div><div class="ytImgFrame"><div class="ytButton"><img width="42" height="30" src="./images/ytButton.png" alt=""></div></div><div class="joinButton"><%= joinButton %></div><div class="roomInfo"><span class="roomInfoPerson"><span class="clickable"><span class="emInfo"></span><%= persons %></span><%= arein %></span><span class="roomInfoTime"><%= startsinging %><span class="emInfo"></span><%= later %></span></div><div class="mask maskFull"><div class="maskMessage"><%= maskFull %></div></div><div class="mask maskEmpty"><div class="maskMessage"><%= maskEmpty %></div></div><div class="mask maskTimeout"><div class="maskMessage"><%= maskTimeout %></div></div></div></div>
+    <div id="song28" class="oneSong"><div class="songFrame"><div class="songTitle"></div><div class="ytImgFrame"><div class="ytButton"><img width="42" height="30" src="./images/ytButton.png" alt=""></div></div><div class="joinButton"><%= joinButton %></div><div class="roomInfo"><span class="roomInfoPerson"><span class="clickable"><span class="emInfo"></span><%= persons %></span><%= arein %></span><span class="roomInfoTime"><%= startsinging %><span class="emInfo"></span><%= later %></span></div><div class="mask maskFull"><div class="maskMessage"><%= maskFull %></div></div><div class="mask maskEmpty"><div class="maskMessage"><%= maskEmpty %></div></div><div class="mask maskTimeout"><div class="maskMessage"><%= maskTimeout %></div></div></div></div>
+    <div id="song29" class="oneSong"><div class="songFrame"><div class="songTitle"></div><div class="ytImgFrame"><div class="ytButton"><img width="42" height="30" src="./images/ytButton.png" alt=""></div></div><div class="joinButton"><%= joinButton %></div><div class="roomInfo"><span class="roomInfoPerson"><span class="clickable"><span class="emInfo"></span><%= persons %></span><%= arein %></span><span class="roomInfoTime"><%= startsinging %><span class="emInfo"></span><%= later %></span></div><div class="mask maskFull"><div class="maskMessage"><%= maskFull %></div></div><div class="mask maskEmpty"><div class="maskMessage"><%= maskEmpty %></div></div><div class="mask maskTimeout"><div class="maskMessage"><%= maskTimeout %></div></div></div></div>       
+    </div>
+
+    <div id="songGrayPad"></div>
+    <div id="clearbothsongs"></div>
+
+    <div id="loadingBar"><img src="./images/load.gif" width="36" height="36" alt="load"></div>
+
+    <div id="reload"><img src="./images/reload.png" width="32" height="32" alt="reload"><p class="clickable">Reload</p></div>
+    
+    <div id="loading"><img src="./images/reloadBig.png" width="64" height="64" alt="loading"></div>
+    
+    <div id="bottomMenu">
+        <a href="/privacy" class="privacyButton"><%= privacy %></a>・
+        <a href="/terms" class="termsButton"><%= termsof %></a>・
+        <span id="contactUsButton"><%= contactUs %></span>・
+        <span id="setInfoButton"><%= setting %></span>
+    </div>
+
+    <div id="graypanel"></div>
+    <div id="graypanel2"></div>
+
+    <div id="addUserInfo" class="zscreen">
+        <p id="addUserInfoHeadline"><%= setinfo %></p>
+        <p><input id="inputNickname" type="text" <%- nicknameph %> maxlength="10" required></p>
+        <p><select id="selectCountry" name="country" required><option value=""><%= optionCountry %></option></select></p>
+        
+        <p id="agreePolicy"><%- byusing %><a href="/privacy" class="termsButton clickable"><%= termsof %></a><%= andstr %><a href="/terms" class="privacyButton clickable"><%= privacy %></a><%= hituyou %></p>
+        <div id="addUserInfoOK">OK</div>
+        <p id="addUserInfoError">
+            <span id="addUserInfoErrorAlpha"><%= errorAlpha %></span>
+            <span id="addUserInfoErrorWithin"><%= errorWithin %></span>
+            <span id="addUserInfoErrorCountry"><%= errorCountry %></span>
+        </p>
+    </div>
+
+    <div id="addSong" class="zscreen">
+        <p id="addSongHeadline"><%= addSongHead %></p>
+        <p id="addSongSteps"><%= addSongStep %></p>
+        <p id="addSongStepOne"></p>
+        <p class="addSongStep"><%= step1h %><a class="clickable" href="https://www.youtube.com/" target="_blank">YouTube</a><%= step1f %></p>
+        <p class="addSongStep"><%= step2 %></p>
+        <p class="addSongStep"><%= step3 %></p>
+        <input id="inputSongUrl" type="text" onInput="inputSongUrl()">
+        <p id="exampleUrl"><%- example %> https://www.youtube.com/watch?v=H7HmzwI67ec</p>
+        <p id="incorrectUrl"><%= incorrectUrl %></p>
+        <div id="correctUrl">
+            <div id="playerPreview"></div>
+            <div id="addSongOK"><%= joinButton %></div>
+            <div class="roomInfo" style="display:none;">
+                <span class="roomInfoPerson"><span class="clickable"><span class="emInfo"></span><%= persons %></span><%= arein %></span>
+                <span class="roomInfoTime"><%= startsinging %><span class="emInfo"></span><%= later %></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="personsInfo" class="zscreen">
+        <div id="personsInfoTitle"><%= member %></div>
+        <div class="pinfo"></div>
+        <div class="pinfo"></div>
+        <div class="pinfo"></div>
+        <div class="pinfo"></div>
+        <div class="pinfo"></div>
+        <div class="pinfo"></div>
+    </div>
+
+    <div id="contactUs" class="zscreen">
+        <div id="contactUsTitle"><%= feelFree %></div>
+        <a href="mailto:contact@chample.in" class="clickable">contact@chample.in</a> 
+        <div id="contactUsText"><%= locatedIn %></div>
+    </div>
+
+    <div id="toast">
+        <span id="toastCountry" class="toastMessage"></span>
+        <span id="toastError" class="toastMessage"><%= toastError %></span>
+        <span id="toastSaved" class="toastMessage"><%= toastSaved %></span>
+        <span id="toastSongTitle" class="toastMessage"></span>
+    </div>
+
+    <div id="iosUnable" style="display:none;"><%= iosUnable %></div>
+    <div id="browserUnable" style="display:none;"><%= browserUnable %></div>
+    <div id="lang" style="display:none;"><%= language %></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="./javascripts/socket.io.js"></script>
+<script src="./javascripts/conf.js"></script>
+<script src="./javascripts/common.js"></script>
+<script src="./javascripts/home.js"></script>
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-74825022-1', 'auto');ga('send', 'pageview');</script>
+</body>
+
+</html>

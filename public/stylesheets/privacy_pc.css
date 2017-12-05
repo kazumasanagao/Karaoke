@@ -1,0 +1,13 @@
+/* 画面上部のメニューの幅を広げる */
+
+#topMenuFrame {
+    width: 800px;
+    margin: 0 auto;
+}
+
+/* メイン部分の幅を広げる。700pxを超えると見づらくなってくる。 */
+
+#mainFrame {
+    width: 700px;
+    margin: 0 auto;
+}
